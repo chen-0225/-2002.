@@ -1,0 +1,33 @@
+#登陆相关配置
+login:
+  #开放的模拟登陆api服务器地址
+  api: "https://xariapapi.azurewebsites.net/api/login"
+
+#用户组配置（只用填入你的登入今日校园的学号和密码）
+users:
+  #单个用户配置
+  - user:
+      enable: 1
+      ua: 'Mozilla/5.0 (Linux; Android 10; ELE-AL00 Build/HUAWEIELE-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36'
+      useserverchan: 1
+#serverchankey获取百度搜索server酱了解
+      serverchankey: ' '
+      usecookies: 0
+      cookies:
+      #username  在‘20130910 ’里面填写学号或者工号
+      username: ''
+      #password 在‘253228 ’里面填写密码
+      password: ''
+      address: '中国江苏省南京市江宁区吉祥路'
+      school: '南京晓庄学院'
+      lon: '118.908211'
+      lat: '31.899029'
+      abnormalReason:
+      photo:
+#今日校园相关配置
+cpdaily:
+  check: true
+  defaults:
+    - default:
+          title: 今日体温（早）
+          value: '36.6'
